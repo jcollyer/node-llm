@@ -8,8 +8,9 @@ const client = new OpenAI({
 
 export default async function handler(req: Request, res: Response) {
   console.log(req.body);
+  const { content } = req.body;
   const response = await client.chat.completions.create({
-    messages: [{ role: "user", content: "Say this is a test" }],
+    messages: [{ role: "user", content }],
     model: "gpt-4o-mini",
   });
 

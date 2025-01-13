@@ -12,7 +12,7 @@ export default async function handler(req:Request, context: any) {
       body: JSON.stringify({
         model: "gpt-4o-mini",
         messages: [{ role: "user", content: prompt }],
-        stream: true,
+        // stream: true,
       }),
       headers: {
         "Content-Type": "application/json",

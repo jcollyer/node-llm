@@ -18,6 +18,10 @@
         "name": "next"
       }
     ],
+    "typeRoots": [
+      "./custom_typings",
+      "./node_modules/@types"
+    ],
     "paths": {
       "@/*": ["./*"]
     }
